@@ -1,0 +1,47 @@
+.userinput{
+	margin: 0 auto;
+}
+.userinput input, button{
+	font-size: 1.5rem;
+	padding: 15px;
+	border:1px solid;
+	border-radius: 3px;
+}
+.nav{
+	margin:0px 0px 0px 0px;
+	padding: 20px;
+	background-color: #333;
+}
+.nav a{
+	margin-left: 10vw;
+	font-size: 1.5rem; 
+	text-decoration: none;
+	color: white;
+}
+.nav a:first-child{
+	margin-left: 15vw;
+}
+#custkey{
+	display: none;
+}
+
+#result{
+	visibility: hidden;
+}
+#result button{
+	border-radius: 3px; 
+	background-color: #4A97E7;
+	color: #ffffff;
+	padding: 10px;
+	font-size: 1.5rem;
+	display: inline-block;
+}
+footer{
+	margin:0px 0px 0px 0px;
+	padding: 20px 20px 20px 30vw;
+	background-color: #000;
+}
+footer li{
+	color: #ffffff;
+	margin-left: 20vh;
+}

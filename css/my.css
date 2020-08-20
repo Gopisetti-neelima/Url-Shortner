@@ -1,0 +1,100 @@
+body{
+	background-image: url('../img/www.jpeg');
+	background-repeat: no-repeat; 
+	background-size: cover;
+	font-family: 'Montserrat','Nunito';
+	display: flex;
+	overflow: hidden;
+}
+
+.container{
+	width:50%;
+	height:50%;
+	margin: 8% 10%;
+}
+
+header{
+	border-radius: 5px;
+	padding: 20px 20px 20px 10%;
+	color: #505050;
+	font-size: 2rem;
+	font-style: bold;
+}
+
+.userinput{
+	margin: 0 0 2vh 8%;
+	font-family: 'Montserrat','Nunito';
+}
+
+#result {
+	margin: 0 0 5vh 8%;
+	padding: 10px;
+	font-family: 'Montserrat','Nunito';
+	visibility: hidden;
+}
+
+#rurl{
+	border: 0px solid #DDDDDD;
+	border-radius: 5px;
+	padding: 10px;
+	display: inline-block;
+	font-size: 1rem;
+}
+
+#custkey{
+	display: none;
+}
+
+input[type=text]{
+	-webkit-transition: all 0.30s ease-in-out;
+  	-moz-transition: all 0.30s ease-in-out;
+  	-ms-transition: all 0.30s ease-in-out;
+  	-o-transition: all 0.30s ease-in-out;
+	width: 60%;
+	outline: none;
+	margin:  5px 10px;
+	border-radius:5px;
+	border: 1px solid #DDDDDD;
+	padding: 10px;
+	font-size: 1rem;
+}
+
+input[type=text]:focus{
+	box-shadow-bottom: 0 0 5px rgba(81, 203, 238, 1);
+  	border: 1px solid rgba(81, 203, 238, 1);
+}
+
+input[type=checkbox]{
+	margin:10px;
+}
+
+label{
+	font-size: 1rem;
+	margin:10px;
+}
+
+.userinput p{
+	margin:10px;
+}
+
+.userinput button{
+	margin: 10px;
+	background-color: #00bbff;
+ 	outline: none;
+ 	border-radius: 5px;
+ 	padding: 10px;
+ 	border: 0px;
+ 	font-size: 1rem;
+ 	font-family: inherit;
+}
+
+ #result button {
+ 	background-image: url("../img/icon2.png");
+ 	background-position: center;
+ 	background-size: cover;
+ 	width: 2rem;
+ 	outline: none;
+ 	border: 1px;
+ 	height: 2rem;
+ 	padding: 10px;
+ }

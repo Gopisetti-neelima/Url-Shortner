@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>URL Shortner</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/my.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+	<script src="js/home.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+	<div class="container">
+	<header>
+		<h1>URL SHORTNER</h1>
+	</header>
+	<div class="userinput">
+		<input type="text" id="userUrl" name="userUrl" placeholder="Enter the url" required="Please enter the URL">
+		<br>
+		<input type="checkbox" onclick="usekey()" name="ckchoice" id="ckchoice" value="1">
+		<label for="ckchoice">Custom key</label>
+		<br> 
+		<input type="text" id="custkey" name="custkey" placeholder="Enter custom key" ><br>
+		<button onclick="submitForm()">Shorten</button>
+		
+	</div>
+	<div id="result">
+		<span id="rurl"></span>
+		<button onclick="copyToClipboard()"></button>
+	</div>
+</div>
+</body>
+</html>
