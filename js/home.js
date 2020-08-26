@@ -1,31 +1,50 @@
 function submitForm()
 {
 	var shorturl;
-	if(isValidCustomKey()){
+	var keyval = document.getElementById("custkey").value;
+	var choice=document.getElementById("ckchoice");
+	var proceed = true;
+	if(choice.checked==true)
+	{
+		if( keyval!=""){
+			proceed = isValidCustomKey();
+		}
+		else{
+			proceed = false;
+			alert("Custom Key Option selected but no value entered");
+		}
+	}
+	
+	if(proceed){
 		axios.post('https://jsonplaceholder.typicode.com/posts', {
 		    title: 'mullapandi',
 		    body: 'sample',
 		    userId: 21
 		  })
 		  .then(response => {
-		    console.log(response.data['body']
-		    //shorturl=response.data['body']
-		    );
+		    console.log(response.data);
 		})
 		var result=document.getElementById("result");
 		document.getElementById("rurl").innerHTML="Generated link : <a href='".concat("xyz","'>xyz</a>");
 		result.style.visibility="visible";
 	}
-	
 }
 
 function isValidCustomKey()
 {
-  axios.get('https://jsonplaceholder.typicode.com/posts?id=20')
-  .then(response => {
-    console.log(response.data);
+	var keyval = document.getElementById("custkey").value;
+	axios.get('https://api.fyle.cc/api/url/',{
+		headers: {
+			'Authorization' : `token ylM9l6qiAUcTz0S8C3M9bUqsTDnbjQRDHRcrBZIOmeMQBAS1VrGW33w1QwGVTF1gTgYJSGJNiUuHCmI6`
+		}
+	})
+  .then((response) => {
+  	console.log(response.data['body'])
+    //isexists=response.data;
   })
-  return true;
+  .catch((error) => {
+  	console.log(error)
+  })
 }
 
 function usekey(){
